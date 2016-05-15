@@ -124,6 +124,7 @@
     <Content Include="controllers\sportsStore.js" />
     <Content Include="filters\customFilters.js" />
     <Content Include="ngmodules\angular-route.js" />
+    <Content Include="views\adminLogin.html" />
     <Content Include="views\adminMain.html" />
     <Content Include="views\checkoutSummary.html" />
     <Content Include="views\placeOrder.html" />

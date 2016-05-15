@@ -1,11 +1,7 @@
-﻿using System.Runtime.Serialization;
-
-namespace WebApplication.Models
+﻿namespace WebApplication.Models
 {
-    [DataContract(IsReference = true)]
     public class Order
     {
-        [DataMember]
         public int id { get; set; }
         public string name { get; set; }
         public string street { get; set; }

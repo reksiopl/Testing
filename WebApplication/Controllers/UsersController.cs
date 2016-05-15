@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
+using WebApplication.Models;
 
 namespace WebApplication.Controllers
 {
     public class UsersController : ApiController
     {
-        public HttpResponseMessage Login(string userName, string password)
+        [HttpPost]
+        public HttpResponseMessage Login([FromBody]User user)
         {
+            var a = HttpContext.Current.User;
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
