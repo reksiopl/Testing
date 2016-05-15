@@ -1,0 +1,10 @@
+﻿<div class="alert alert-danger" data-ng-show="data.orderError">
+    Bład ({{ data.orderError.status}}). Zamowienie nie moze być zrealizowane.
+    <a href="#/placeorder" class="alert alert-link">Klikni tutaj, aby sprobować ponownie</a>
+</div>
+<div class="well" data-ng-hide="data.orderError">
+    <h2>Dziękujemy</h2>
+    Dziękujemy za złożenie zamówienia. Produkty zostaną wysłane jak najszybciej
+    Jeśli chcesz sie skontaktować w sprawie zamowienia, podaj jego identyfikator:
+    {{data.orderId}}
+</div>

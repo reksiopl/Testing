@@ -1,0 +1,6 @@
+[
+	 { "action": "Kupic kwiaty", "done": false },
+	 { "action": "Kupic buty", "done": false },
+	 { "action": "Kupic bilety", "done": true },
+	 { "action": "Zadzwonic do Janka", "done": false }           
+]

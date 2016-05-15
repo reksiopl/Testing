@@ -1,0 +1,75 @@
+﻿<style>
+    .ng-invalid {
+        background-color: lightpink;
+    }
+
+    .ng-valid {
+        background-color: lightgreen;
+    }
+
+    span.error {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<!DOCTYPE html>
+<h2>Dokoncz zamowienie</h2>
+<p>Podaj wymagane dane, a zamowienie zostanie natychmiast wysylane</p>
+<form name="shippingForm">
+    <div class="well">
+        <h3>Odbiorca</h3>
+        <div class="form-group">
+            <label>Imie i nazwisko</label>
+            <input name="name" class="form-control" data-ng-model="data.shipping.name" required />
+            <span class="error" data-ng-show="shippingForm.name.$error.required">Podaj imie i nazwisko
+            </span>
+        </div>
+        <h3>Adres</h3>
+        <div class="form-group">
+            <label>Nazwa ulicy</label>
+            <input name="street" class="form-control" data-ng-model="data.shipping.street" required />
+            <span class="error" data-ng-show="shippingForm.street.$error.required">Prosze podac nazwe ulicy.</span>
+        </div>
+        <div class="form-group">
+            <label>Miasto</label>
+            <input name="city" class="form-control"
+                data-ng-model="data.shipping.city" required />
+            <span class="error" data-ng-show="shippingForm.city.$error.required">Proszę podać nazwę miejscowości.
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Województwo</label>
+            <input name="state" class="form-control"
+                data-ng-model="data.shipping.state" required />
+            <span class="error" data-ng-show="shippingForm.state.$error.required">Proszę podać nazwę województwa.
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Kod pocztowy</label>
+            <input name="zip" class="form-control"
+                data-ng-model="data.shipping.zip" required />
+            <span class="error" data-ng-show="shippingForm.zip.$error.required">Proszę podać kod pocztowy.
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Kraj</label>
+            <input name="country" class="form-control"
+                data-ng-model="data.shipping.country" required />
+            <span class="error" data-ng-show="shippingForm.country.$error.required">Proszę podać nazwę kraju
+            </span>
+        </div>
+        <h3>Opcje</h3>
+        <div class="checkbox">
+            <label>
+                <input name="giftwrap" type="checkbox"
+                       data-ng-model="data.shipping.giftwrap" />
+
+                Zapakuj jako prezent.
+            </label>
+        </div>
+        
+        <div class="text-center">
+            <button class="btn btn-primary" data-ng-disabled="shippingForm.$invalid" data-ng-click="sendOrder(data.shipping)">Dokoncz zamowienie</button>
+        </div>
+    </div>
+</form>
