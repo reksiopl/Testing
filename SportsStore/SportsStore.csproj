@@ -111,17 +111,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.html" />
     <Content Include="angular.js" />
     <Content Include="app.html" />
     <Content Include="bootstrap-theme.css" />
     <Content Include="bootstrap.css" />
     <Content Include="components\cart\cart.js" />
     <Content Include="components\cart\cartSummary.html" />
+    <Content Include="controllers\adminControllers.js" />
     <Content Include="controllers\checkoutControllers.js" />
     <Content Include="controllers\productListControllers.js" />
     <Content Include="controllers\sportsStore.js" />
     <Content Include="filters\customFilters.js" />
     <Content Include="ngmodules\angular-route.js" />
+    <Content Include="views\adminMain.html" />
     <Content Include="views\checkoutSummary.html" />
     <Content Include="views\placeOrder.html" />
     <Content Include="views\productList.html" />
